@@ -11,8 +11,8 @@ import com.google.gson.JsonParser;
 
 public class ForecastFit {
 
-    private static final String WEATHER_API_KEY = "REMOVED_TOMORROW_KEY";
-    private static final String GEOCODING_API_KEY = "REMOVED_OPENCAGE_KEY";
+    private static final String WEATHER_API_KEY = System.getenv("TOMORROW_API_KEY");
+    private static final String GEOCODING_API_KEY = System.getenv("OPENCAGE_API_KEY");
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
